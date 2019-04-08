@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Video.js Sublime Skin</title>
+  
+  <link rel='stylesheet' href='https://vjs.zencdn.net/5-unsafe/video-js.css'>
+  <link rel='stylesheet' href='css/style.css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+
+<div id="wrapper">
+  <video id="my_video_1" class="video-js vjs-sublime-skin" width="640px" height="267px"
+      controls preload="none" poster='https://video-js.zencoder.com/oceans-clip.jpg'
+      data-setup='{ "aspectRatio":"640:350", "playbackRates": [1, 1.5, 2] }'>
+    <source src="https://v.pinimg.com/videos/720p/ac/24/1f/ac241f7ee658069e8690ed8009954416.mp4" type='video/mp4' />
+  </video>
+</div>
+  
+<style>
+  #wrapper { max-width: 900px; text-align: left; margin: 30px auto; }
+  
+  /* Show the controls (hidden at the start by default) */
+  .video-js .vjs-control-bar { 
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  /* Make the demo a little prettier */
+  body {
+    margin-top: 20px;
+    background: #eee;
+    text-align: center; 
+    color: #aaa;
+  }
+
+</style>
+<script src='https://vjs.zencdn.net/5-unsafe/video.js'></script>
+</body>
+</html>
